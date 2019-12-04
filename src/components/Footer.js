@@ -2,7 +2,7 @@ import React from 'react'
 import styles from '../css/footer.module.css'
 import links from '../utilities/links'
 import socialIcons from '../utilities/social-icons'
-import {Link} from 'gatsby'
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 
 export default function Footer () {
 
@@ -10,8 +10,8 @@ export default function Footer () {
         <footer className={styles.footer}>
             <div className={styles.links}>
             {links.map((item, index) => {
-                return <Link key={index} to={item.path}>
-                {item.text}</Link>
+                return <AniLink fade to key={index} to={item.path}>
+                {item.text}</AniLink>
             })}
             </div>
             <div className={styles.icons}>

@@ -2,9 +2,10 @@ import React, {useState} from 'react'
 import styles from "../css/navbar.module.css"
 import {FaAlignRight} from "react-icons/fa"
 import links from "../utilities/links"
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 import socialIcons from "../utilities/social-icons"
 import logo from "../images/ETS-Logo.svg"
-import {Link} from 'gatsby'
+
 
 
 
@@ -25,7 +26,7 @@ const Navbar = () => {
         </div>
         <ul className={isOpen?`${styles.navLinks} ${styles.showNav}` : `${styles.navLinks}`}>
         {links.map((item, index) => {
-            return(<li key={index}> <Link to={item.path}> {item.text} </Link> </li>)
+            return(<li key={index}> <AniLink fade to={item.path}> {item.text} </AniLink> </li>)
         })}
         </ul>
 
