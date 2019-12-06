@@ -5,6 +5,7 @@ import StyledHero from "../components/StyledHero"
 import Banner from '../components/Banner'
 import About from '../components/Homepage/About'
 import Services from '../components/Homepage/Services'
+import FeaturedItineraries from '../components/Homepage/FeaturedItineraries'
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 import {graphql} from 'gatsby'
 
@@ -18,7 +19,7 @@ export default ({data}) => (
     </StyledHero>
     <About />
     <Services/>
-
+    <FeaturedItineraries />
   </Layout>
 )
 

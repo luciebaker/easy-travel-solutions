@@ -23,11 +23,11 @@ const About = () => {
           <Title title="about" subtitle="us"/>  
           <div className={styles.aboutCenter}>
           <article className={styles.aboutImg}>
-          <div classname={styles.imgContainer}>
+          <div className={styles.imgContainer}>
           <Img fluid={aboutImage.childImageSharp.fluid} alt="French Polynesia"/>
           </div>
           </article>
-          <article classname={styles.aboutInfo}>
+          <article className={styles.aboutInfo}>
           <h2>Not sure where to go? Let us guide you</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
           <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
@@ -37,6 +37,4 @@ const About = () => {
         </section>
     )
 }
-
-
 export default About
