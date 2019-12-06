@@ -1,9 +1,9 @@
 import React from 'react'
 import Itinerary from '../Itineraries/Itinerary'
-import {useStaticQuery, graphQL} from 'gatsby'
+import {useStaticQuery, graphql} from 'gatsby'
 import Title from '../Title'
 import styles from '../../css/items.module.css'
-import Anilink from 'gatsby-plugin-transition-link/Anilink'
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 
 const getFeaturedItineraries = graphql `
 {
@@ -41,7 +41,7 @@ const FeaturedItineraries = () => {
 
         })}
         </div>
-        <Anilink fade to="/itineraries" className="btn-primary">See all itineraries</Anilink>
+        <AniLink fade to="/itineraries" className="btn-primary">See all itineraries</AniLink>
         </section>
     )
 }
