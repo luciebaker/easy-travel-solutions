@@ -18,7 +18,7 @@ featureditineraries: allContentfulEtsItineraries(filter: {featured: {eq:true}}) 
         days
         images {
         fluid {
-            ...GatsbyContentfulFluid_tracedSVG
+            ...GatsbyContentfulFluid
         }
         }
     }
