@@ -6,7 +6,10 @@ module.exports = {
   siteMetadata: {
     title: `Easy Travel Solutions`,
     description: `Just pick your travel destination and we take care of the rest.`,
-    author: `@lucieb`,
+    author: `LucieB`,
+    twitterUsername: "@lucieB",
+    image: '/defaultBcg.jpeg',
+    siteUrl: 'https://easy-travel-solutions.netlify.com',
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
